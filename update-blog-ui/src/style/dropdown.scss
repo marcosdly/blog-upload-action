@@ -1,0 +1,13 @@
+@use "./index.scss" as main;
+
+.dropdown-menu {
+  border-radius: 0.3rem;
+  border: 2px solid main.$fg;
+  padding: 0.5rem;
+  color: main.$bg;
+  background-color: main.$fg;
+}
+
+.dropdown-menu:not(:last-child) {
+  margin-bottom: 0.8rem;
+}

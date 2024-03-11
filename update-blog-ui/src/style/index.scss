@@ -1,0 +1,43 @@
+$bg: #222;
+$fg: #e2e2e2;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: $bg;
+  color: $fg;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app {
+  width: 90%;
+  height: 80%;
+  padding: 1rem;
+  border: 2px solid $fg;
+  border-radius: 1rem;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+
+  .documents-view,
+  .info-container,
+  .markdown-preview {
+    border: 2px solid $fg;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 31.5%;
+    height: 95%;
+  }
+}

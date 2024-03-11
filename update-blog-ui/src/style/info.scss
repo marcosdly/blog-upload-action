@@ -1,0 +1,60 @@
+@use "./index.scss" as main;
+
+.info-container {
+  .document-info-container {
+    width: 100%;
+
+    h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    .confirm {
+      padding: 1rem;
+      border: 1px solid main.$fg;
+      border-radius: 5px;
+      font-family: monospace;
+      input {
+        font-family: sans-serif;
+        font-weight: bold;
+        // width: 50px;
+        // height: 30px;
+        padding: 0.3rem;
+      }
+
+      label {
+        padding: 10px;
+      }
+    }
+  }
+
+  .field {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+
+    .token {
+      font-family: monospace;
+      margin: 0 4px;
+    }
+
+    input {
+      width: 30%;
+      height: 1.2rem;
+      vertical-align: middle;
+      padding: 5px;
+      background-color: main.$fg;
+      color: main.$bg;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .type {
+      text-align: center;
+    }
+  }
+}
